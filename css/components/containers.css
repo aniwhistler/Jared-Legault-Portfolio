@@ -3,24 +3,8 @@
   justify-content: center;
 }
 
-.simple-container {
-  margin:3.5rem 6rem 3.5rem 6rem;
-  width: auto;
-  height: auto;
-}
-
-.testing {
-  background-color: #b09c71;
-  display: flex;
-  justify-content: center;
-  height: 400px;
-  width: 800px;
-  padding: 30px;
-  border-style: solid;
-  border-image-source: url("/images/parchment_leather_border_2.png");
-  border-image-slice: 15%;
-  border-image-repeat: round;
-  border-width: 20px;
-  border-image-width: 75px;
-  background-clip: padding-box;
+.main-body-container {
+  width: 90%;
+  max-height: 500px;
+  overflow-y: scroll;
 }

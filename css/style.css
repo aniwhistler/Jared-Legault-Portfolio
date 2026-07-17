@@ -1,6 +1,6 @@
 /* Importing Google fonts */
 @import url("https://fonts.googleapis.com/css2?family=Varela+Round");
-@import url('https://fonts.googleapis.com/css2?family=Jacquard+12&family=Metamorphous&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Unkempt:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&display=swap');
 
 
 /* Importing FontAwesome */
@@ -10,17 +10,87 @@
 @import url("components/cards.css");
 @import url("components/buttons.css");
 @import url("components/containers.css");
+@import url("components/banners.css");
+@import url("components/texts.css");
 
 /* Importing layouts */
 
 /* General styling */
 
 body {
-  background: linear-gradient(#c0faf7, #292275);
+  background: linear-gradient( #E39CFF, #00264A );
   background-attachment: fixed;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: "Jacquard 12";
-  text-shadow: 5px 5px 5px rgb(87, 87, 87);
+#name {
+  position: absolute;
+  top: 11%;
+  left: 1%;
+  font-family: "Jaro";
+  color: #009755;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #313D63;
+  text-shadow: 3px 4px 5px #2b083b8a;
+}
+
+.top-bar {
+  width: auto;
+  height: 5rem;
+  background-color: #424e41;
+  position: relative;
+}
+
+.top-bar i {
+  margin: 0 0.75rem 0 0.75rem;
+  font-size: 2.5rem;
+  color: rgb(148, 204, 140);
+  transition: 0.2s ease;
+  text-shadow: 3px 3px 2px black;
+}
+
+.top-bar i:hover {
+  margin: 0 0.75rem 0.75rem 0.75rem;
+  font-size: 2.5rem;
+  color: rgb(166, 252, 152);
+  transform: scale(1.1);
+  text-shadow: 5px 5px 5px black;
+}
+
+.top-bar a {
+  text-decoration: none;
+}
+
+@property --angle {
+  syntax:"<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
+.top-bar::after, .top-bar::before {
+  --angle: 0deg;
+  content: "";
+  width: 100%;
+  height: 104%;
+  position: absolute;
+  background-image: conic-gradient(from var(--angle), rgb(117, 10, 33), rgb(0, 26, 139), rgb(9, 105, 0), rgb(105, 98, 0), rgb(93, 0, 105), rgb(117, 10, 33) );
+  top: 0;
+  left: 0;
+  margin-bottom: 10px;
+  z-index: -1;
+  animation: 3s spin linear infinite;
+}
+
+.top-bar::before {
+  filter: blur(16px);
+  opacity: 0.75;
+}
+
+@keyframes spin {
+  from {
+    --angle: 0deg;
+  }
+
+  to {
+    --angle: 360deg;
+  }
 }
