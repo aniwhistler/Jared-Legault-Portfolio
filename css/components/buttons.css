@@ -1,45 +1,3 @@
-.btn-medium {
-  background-color: white;
-  border-radius: 30px;
-  border-color: lightgray;
-  border-width: 2px;
-  border-style: solid;
-  padding: 15px 30px;
-  color: lightgrey;
-  transition: 0.4s ease;
-}
-
-.btn-medium:hover {
-  font-weight: 600;
-  font-size: 18px;
-  border-width: 6px;
-}
-
-.btn-medium:focus {
-  font-weight: 600;
-  font-size: 18px;
-  border-width: 6px;
-}
-
-.btn-treehouse {
-  background-color: lightgreen;
-  border-radius: 5px;
-  font-weight: 800;
-  color: white;
-  padding: 15px 30px;
-  transition: 0.2s ease;
-}
-
-.btn-treehouse:hover {
-  background-color: rgb(93, 182, 93);
-  text-shadow: 1px 1px 2px black;
-}
-
-.btn-treehouse:focus {
-  background-color: rgb(93, 182, 93);
-  text-shadow: 1px 1px 2px black;
-}
-
 .btn-yours {
   background-color: rgb(155, 78, 179);
   padding: 30px 15px;
@@ -74,4 +32,8 @@
   border-color: yellowgreen;
   color: orange;
   transform: scale(0.9, 0.9);
+}
+
+.main-button {
+
 }
