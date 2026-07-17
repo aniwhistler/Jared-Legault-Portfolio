@@ -1,0 +1,26 @@
+/* Importing Google fonts */
+@import url("https://fonts.googleapis.com/css2?family=Varela+Round");
+@import url('https://fonts.googleapis.com/css2?family=Jacquard+12&family=Metamorphous&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Unkempt:wght@400;700&display=swap');
+
+
+/* Importing FontAwesome */
+@import url('https://use.fontawesome.com/releases/v6.1.2/css/all.css');
+
+/* Importing components */
+@import url("components/cards.css");
+@import url("components/buttons.css");
+@import url("components/containers.css");
+
+/* Importing layouts */
+
+/* General styling */
+
+body {
+  background: linear-gradient(#c0faf7, #292275);
+  background-attachment: fixed;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Jacquard 12";
+  text-shadow: 5px 5px 5px rgb(87, 87, 87);
+}
