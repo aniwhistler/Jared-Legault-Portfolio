@@ -5,6 +5,7 @@
   background-color: rgba(255, 228, 196, 0.20);
   position: relative;
   border-radius: 20px;
+  border: 3px ridge rgb(219, 208, 145);
 }
 
 .intro-card::after {

@@ -37,7 +37,7 @@
           <button
           class="main-button"
           data-action="click->event#introclicked"
-          data-event-target="intro"
+          data-event-target="ibutton"
           >
             <p class="main-button-text">Intro</p>
           </button>
@@ -45,7 +45,7 @@
           <button
           class="main-button"
           data-action="click->event#projectclicked"
-          data-event-target="project"
+          data-event-target="pbutton"
           >
             <p class="main-button-text">Project</p>
           </button>
@@ -64,6 +64,19 @@
           </div>
         </div>
       </div>
+      <div class="centering">
+        <div class="main-body-container d-flex justify-content-center">
+          <div class="intro-card d-none" data-event-target="project">
+            <h3 class="card-title-text">A project</h3>
+            <p class="card-normal-text">A bit about it...</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="centering footer-container">
+      <p>Hope you're having a lovely time </p>
+      <i class="fa-regular fa-face-laugh-beam ps-2"></i>
     </div>
 
     <script type="module" src="index.js"></script>
