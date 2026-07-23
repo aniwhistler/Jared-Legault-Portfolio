@@ -4,8 +4,15 @@
 }
 
 .main-body-container {
-  width: 90%;
-  max-height: 500px;
+  width: 95%;
+  max-height: 600px;
+}
+
+.project-body-container {
+  display: flex;
+  justify-content: center;
+  width: 95%;
+  height: 600px;
 }
 
 .footer-container {
@@ -38,4 +45,20 @@
 
 .footer-container p {
   margin: 0;
+}
+
+@media (max-width: 600px) {
+
+  .project-body-container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 90%;
+    translate: 0 -80px;
+  }
+
+  .language-icons-container img {
+    height: 4rem;
+  }
+
 }
