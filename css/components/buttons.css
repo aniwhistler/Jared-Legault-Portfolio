@@ -35,3 +35,20 @@
   box-shadow: inset -4px -4px 6px rgba(0, 0, 0, 0.3);
   translate: 0 -103px;
 }
+
+.disabled-button {
+  pointer-events: none;
+  cursor: default;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  translate: 0 115px;
+  width: 12rem;
+  height: 4rem;
+  border-radius: 16px;
+  border: 5px solid rgb(33, 35, 58);
+  background-color: rgb(121, 95, 64);
+  box-shadow: inset -3px -3px 5px rgba(0, 0, 0, 0.5);
+  text-decoration: none;
+  transition: 0.2s ease;
+}

@@ -20,6 +20,22 @@
   font-size: 1.5rem;
 }
 
+.language-icons-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.language-icons-container img {
+  height: 5rem;
+  transition: 0.2s ease;
+}
+
+.language-icons-container img:hover {
+  filter: brightness(1.2);
+  filter: contrast(1.5);
+  transform: scale(1.1);
+}
+
 .footer-container p {
   margin: 0;
 }
