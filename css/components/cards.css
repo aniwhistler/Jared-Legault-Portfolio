@@ -15,7 +15,7 @@
   left: 0;
   height: 100%;
   width: 100%;
-  background-image: url("images/Noise.png");
+  background-image: url("./images/Noise.png");
   background-repeat: round;
   opacity: 0.08;
   border-radius: 20px;
@@ -38,7 +38,7 @@
   left: 0;
   height: 100%;
   width: 100%;
-  background-image: url("images/Noise.png");
+  background-image: url("./images/Noise.png");
   background-repeat: round;
   opacity: 0.08;
   border-radius: 20px;
