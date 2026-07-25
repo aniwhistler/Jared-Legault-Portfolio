@@ -41,6 +41,12 @@
   color: rgb(100, 48, 97);
 }
 
+.redirect-button-text {
+  font-family: "Jaro", sans-serif;
+  font-size: 1.5rem;
+  color: rgb(185, 72, 196);
+}
+
 
 @media (max-width: 600px) {
 
