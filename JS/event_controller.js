@@ -1,7 +1,7 @@
 import { Controller } from "@hotwired/stimulus";
 
 export default class extends Controller {
-  static targets = ["intro", "game", "movie", "waifood", "welcome", "ibutton", "pbutton"]
+  static targets = ["intro", "game", "movie", "waifood", "omniquill", "welcome", "ibutton", "pbutton"]
   connect() {
   }
 
@@ -15,6 +15,7 @@ export default class extends Controller {
     this.gameTarget.classList.add("d-none");
     this.movieTarget.classList.add("d-none");
     this.waifoodTarget.classList.add("d-none");
+    this.omniquillTarget.classList.add("d-none");
 
     this.ibuttonTarget.classList.add("button-clicked");
     this.ibuttonTarget.classList.remove("main-button");
@@ -31,11 +32,15 @@ export default class extends Controller {
     this.gameTarget.classList.add("fade-in");
     this.gameTarget.classList.remove("d-none");
 
-    this.movieTarget.classList.add("fade-in");
-    this.movieTarget.classList.remove("d-none");
+    this.omniquillTarget.classList.add("fade-in");
+    this.omniquillTarget.classList.remove("d-none");
 
     this.waifoodTarget.classList.add("fade-in");
     this.waifoodTarget.classList.remove("d-none");
+
+    this.movieTarget.classList.add("fade-in");
+    this.movieTarget.classList.remove("d-none");
+
 
     this.introTarget.classList.add("d-none");
 

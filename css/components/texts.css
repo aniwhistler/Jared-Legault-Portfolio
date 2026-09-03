@@ -47,6 +47,11 @@
   color: rgb(185, 72, 196);
 }
 
+.text-overflowing {
+  height: auto;
+  overflow-y: scroll;
+}
+
 
 @media (max-width: 600px) {
 
